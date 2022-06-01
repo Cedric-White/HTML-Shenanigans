@@ -1,0 +1,214 @@
+/*
+*{
+    margin:0;
+    padding:0;
+} this overwrites all changes to the chosen attributes of a page
+*/
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+a:hover{
+    color:red;
+}
+
+a:active{
+    color:green;
+}
+
+a:visited{
+    color:blue;
+}
+
+
+
+body{
+    background-color: #f4f4f4f4;
+    color:#000;
+    
+    font: normal 16px Arial, Helvetica, sans-serif;
+    /* or all this
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:normal;
+    */
+
+    line-height: 1.6em;
+    margin:0;
+}
+
+.container{
+    width: 80%;
+    /*usually width is a percent on a px 
+    so it can fit to screen */
+    margin: auto;
+}
+
+.button{
+    background-color: #333;
+    color: #fff;
+    padding:10px 15px;
+    border: none;
+    border-radius: 40px;
+}
+
+.button:hover{
+    background: red;
+    color: #fff;
+}
+
+.clr{
+    clear: both;
+}
+.box-1{
+    background-color: #333;
+    color: #fff;
+
+    border:5px red solid; 
+    /* or
+    border-left:5px red solid; 
+    border-right:5px red solid; 
+    border-top:5px red solid; 
+    border-bottom:5px red solid; 
+    
+    */
+
+    padding: 20px;
+    /*
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    */
+
+    margin: 20px 0;
+    /* ^^^ sets top and bottom to 20px and left and right to 0
+    margin-top:20px;
+    sets all sides to the same margin */
+}
+
+.box-1 h1{
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    /* em; a unit for spacing */
+    word-spacing: 1em;
+}
+
+.box-2{
+    border: 3px dotted #ccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.categories{
+    border: 1px #ccc solid;
+    padding:10px;
+    border-radius: 15px;
+    /*border-radius rounds the corners of the border*/
+}
+
+.categories h2{
+    text-align:center;
+}
+
+.categories ul{
+    padding-left: 20px;
+    list-style: none; /*or square or whatever else (look it up)*/
+}
+
+.categories li{
+    padding-bottom: 6px;
+    border-bottom: dotted #333;
+    /*list-style-image: url('../images/check.png');*/ 
+}
+
+.my-form{
+    padding:20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display:block; /*changes labels from in-line to block*/
+}
+
+.my-form input[type="text"], .my-form textarea{
+    /*if this was only input then that would change all input tags, and the
+    submit button is an input tag...
+    to avoid this change it to what is up there now.
+    add textarea to change the messgae textarea tag */
+    padding: 8px;
+    width: 100%;
+}
+
+.block{
+    float:left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box; 
+    /*^this makes it so that the two adjusted attributes above this 
+    are factored into the width*/
+}
+
+#main-block{
+    float:left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 80%;
+    height: 500px;
+    border: 1px solid #000;
+    position: relative;
+    background-image: url(../images/photo-1604725333736-1f962a6218d0.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.p-box h1{
+    position: absolute;
+    top:40px;
+}
+
+.fix-me{
+    position: fixed;
+    top: 400px;
+} /*cool for social media links and nav bars*/
+
+.my-list li:first-child{
+    background-color: red;
+
+}
+
+.my-list li:last-child{
+    background-color: blue;   
+}
+
+.my-list li:nth-child(5){
+    background-color: yellow;
+}
+
+.my-list li:nth-child(even){
+    background-color: grey;
+}
